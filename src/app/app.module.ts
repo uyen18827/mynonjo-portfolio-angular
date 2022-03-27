@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopNavbarComponent } from './top-navbar/top-navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { CommissionGuideComponent } from './pages/commission-guide/commission-guide.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    CommissionGuideComponent
   ],
   imports: [
     BrowserModule,
