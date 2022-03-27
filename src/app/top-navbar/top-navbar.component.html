@@ -1,0 +1,68 @@
+<div class="container">
+    <nav class="nav__content">
+        <a href="/index.html">
+            <h1 class="brand">mynonjo</h1>
+        </a>
+        <div class="hamburger mobile-only" 
+        (click)="toggleMenu()" 
+        [ngClass]="{ 'open': !toggleClass }">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="desc">
+            Illustrator. <br>
+            Graphic Designer.
+        </div>
+    </nav>
+</div>
+<!-- SLIDE OUT MENU MOBILE ONLY -->
+<div class="hamburger__slide-menu mobile-only" [ngClass]="{ 'open': !toggleClass }">
+    <div class="menu__container">
+        <ol>
+            <a href="#">
+                <li><span>Home</span></li>
+            </a>
+            <a href="#">
+                <li><span>Projects</span></li>
+            </a>
+            <a href="/commguide.html">
+                <li><span>Services</span></li>
+            </a>
+            <a href="#">
+                <li><span>About</span></li>
+            </a>
+        </ol>
+    </div>
+    <div class="contact-table">
+        <table class="no-left no-right">
+            <tr>
+                <td class="no-left">
+                    <a href="https://www.instagram.com/mynonjo/">
+                        <img src="/assets/Instagram.svg" alt="Instagram">
+                    </a>
+                </td>
+                <td class='no-right'>
+                    <a href="https://crimsoncuria.tumblr.com">
+                        <img src="/assets/Tumblr.svg" alt="Tumblr">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="no-left">
+                    <a href="https://twitter.com/mynonjo">
+                        <img src="/assets/Twitter.svg" alt="Twitter">
+                    </a>
+                </td>
+                <td class='no-right'>
+                    <a href="https://ko-fi.com/mynonjo">
+                    <img class="kofi-icon" src="/assets/ko-fi.svg" alt="Ko-fi"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="no-left no-right" colspan="2"><a href="mailto:ngongocmy314@gmail.com">ngongocmy314@gmail.com</a></td>
+            </tr>
+        </table>
+    </div>
+</div>

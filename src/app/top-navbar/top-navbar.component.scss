@@ -1,0 +1,107 @@
+@import "../variables.scss";
+///////////////////////// 🩸BRAND🩸 ///////////////////////////////
+h1.brand {
+  font-family: $syco;
+  letter-spacing: 5px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0 0 0 0;
+}
+.nav__content {
+  display: block;
+  padding-top: 72px;
+  padding:  72px $side-padding 0 $side-padding;
+}
+@media screen and (max-width: 750px) {
+  .nav__content {
+    padding-left: 35px;
+    z-index: 10;
+  }
+}
+/////////////////////// 🍔HAMBURGER & MENU🍔 /////////////////////////
+.hamburger {
+  &__slide-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 9;
+    
+    transform: translateX(-100vw);
+    transition: transform .5s ease;
+    background-color:$background;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    ///////////////MENU LIST CONTAINER//////////////
+    & .menu__container {
+      & a {
+        color: $white;
+      }
+      & ol {
+        padding-left: 0px;
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        margin-top: 0;
+        margin-bottom: 0;
+        &:hover > a {
+          color: $grey;
+        }
+        &:hover > a:hover {
+          color: $white;
+        }
+      }
+      & ol li {
+        counter-increment: my-awesome-counter;
+        padding-bottom: 11px;
+        &:not(:last-child) {
+          padding-bottom: 0px;
+        }
+      }
+      & ol li::before {
+        content: counter(my-awesome-counter);
+        color: $accent;
+        font-weight: bold;
+        padding-right: 32px;
+      }
+    }
+    
+    ///////////// CONTACT ///////////////
+    & .contact-table {
+      padding-top:164px;
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+
+      table, td, th {
+        border: 2px solid $accent;
+        height: 50px;
+        width: 50%;
+      }
+      a {
+        color: $white;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .no-left {
+        border-left: 0px;
+      }
+      .no-right {
+        border-right: 0px
+      }
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////

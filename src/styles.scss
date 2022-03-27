@@ -1,1 +1,255 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Syncopate:wght@700&display=swap');
+
+@import "./app/variables.scss";
+///////////////////// GENERAL /////////////////////////////
+body {
+  background-color: $background;
+  color: $white;
+  font-family: $krona, sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $accent;
+}
+
+::selection {
+  color: $white;
+  background: $accent;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $grey;
+  &:hover {
+    color: $white;
+  }
+}
+
+.accent {
+  color: $accent;
+}
+
+/////////////////////CONTAINER/////////////////////
+div.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  & .desc {
+    font-family: $krona;
+    font-size: $small;
+    color: $accent;
+    margin-top: 13px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: auto;
+  } 
+}
+////////////////////////ICONS////////////////////////////////
+.kofi-icon {
+  width: 41px;
+  height: 41px;
+}
+///////////////////////HAMBURGER/////////////////////
+.hamburger {
+  z-index: 10;
+  cursor: pointer;
+  &.desktop  {
+    margin-left: 0;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: $white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  &.open{
+    & .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    & .bar2 {opacity: 0;}
+
+    & .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+}
+//////////////////////🎿SLIDE MENU🎿//////////////////////////////
+.menu__container {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+.menu {
+  display: none;
+  padding-left: 57px;
+  font-family: $krona;
+  font-size: $regular;
+  z-index: 10;
+  &.open {
+    display: block;
+  }
+  & a {
+    color: $white;
+  }
+  & ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    margin-top: 0;
+    margin-bottom: 0;
+    &:hover > a {
+      color: $grey;
+    }
+    &:hover > a:hover {
+      color: $white;
+    }
+  }
+  & ol li {
+    counter-increment: my-awesome-counter;
+    padding-bottom: 11px;
+    &:not(:last-child) {
+      padding-bottom: 0px;
+    }
+  }
+  & ol li::before {
+    content: counter(my-awesome-counter);
+    color: $accent;
+    font-weight: bold;
+    padding-right: 32px;
+  }
+}
+.slide-menu {
+  z-index: 11;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+
+  -webkit-transform: translatex(-261px);
+  -ms-transform: translatex(-261px);
+  transform: translatex(-261px);
+  
+  transition: transform .5s ease;
+  &__body {
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    width: 261px;
+
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 30px 30px 0px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .slide-menu__nav {
+      display: none;
+      padding: 0 0 0 0;
+      & ol {
+        font-size: 12px;
+        padding: 0 0 0 0;
+      }
+    }
+  }
+  &__button-container {
+    padding-top: 46px;
+    height: auto;
+
+    .slide-menu__button {
+      /* Rectangle 12 */
+      width: 24px;
+      height: 75px;
+
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+
+      background: #E37AFF;
+      border: 1px solid #E37AFF;
+      box-sizing: border-box;
+      border-radius: 0px 10px 10px 0px;
+      
+      & img {
+        height: 18px;
+      }
+    }
+  }
+    
+
+  &.open {
+    transform: translateX(0);
+    display: flex;
+    .slide-menu__nav {
+      display: block;
+    }
+  }
+}
+
+//////////////////// 📱RESPONSIVE📱 ////////////////////////////
+.mobile-only {
+  display: none;
+}
+@media screen and (max-width:750px) {
+  .desktop {
+    display: none!important;
+  }
+  .brand__container {
+    position: inherit
+  }
+
+  .review {
+    font-size: 18px;
+  }
+  .wrapper, .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container {
+    text-align: center;
+  }
+  .desc {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .hamburger {
+    position: absolute;
+    right: 51px;
+    top: 66px;
+    margin: 0;
+  }
+  .to-top {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    height: 60px;
+  }
+}
