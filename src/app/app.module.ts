@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { CommissionGuideComponent } from './pages/commission-guide/commission-guide.component';
+import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
     HomepageComponent,
-    CommissionGuideComponent
+    CommissionGuideComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
