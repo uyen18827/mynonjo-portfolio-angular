@@ -1,0 +1,219 @@
+@import "src/variables.scss";
+// @import 'swiper/scss';
+.right {
+    text-align: right;
+}
+.standard-container {
+    padding:  0 $side-padding 0 $side-padding;
+}
+.two-side-container {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: row;
+    // EXPERIMENTAL
+    max-width: 1000px;
+    margin: auto;
+    &.column {
+        flex-direction: column;
+        & .container-1 {
+            padding-bottom: 20px;
+            justify-content: space-between;
+        }
+    }
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+    & .heading {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    & ul > li {
+        font-family: $krona;
+        list-style: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2.1rem;
+        &:before{
+            padding-right: 30px;
+            content: "— ";
+            color: $accent;
+        }
+    }
+    
+    // & .container-1 {
+        
+    // }
+}
+.container-2, .container-1 {
+    display: flex;
+    flex-direction: row;
+    &.text-container {
+        flex-direction: column;    
+        padding-right: 45px;
+    }
+    & .container__desc {
+        font-family: $krona;
+        font-size: 13px;
+        color: $grey;
+        a {
+            color: $accent;
+        }
+        &.horizontal {
+            padding-top: 33px;
+        }
+        &.vertical {
+            padding-top: 0px;
+            padding-left: 20px;
+        }
+    }
+    & .container__img-container:not(:last-child) {
+        margin-right: 33px;
+    }
+    &.reverse .container__img-container:last-child {
+        margin-right: 33px;
+    }
+}
+.container__img-container {
+    border: 1px solid $accent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 317px;
+    height: 458px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+        padding: 14px;
+        width: 288px;
+        // height: 100%;
+        border-radius: 20px;
+    }
+    &.portrait--long {
+        width: 216px;
+        height: 458px;
+        & img {
+            width: 180px;
+            height: 429px;
+        }
+    }
+    &.lacroix {
+        width: 484px;
+        height: 458px;
+        object-fit: cover;
+        // border: 1px solid $accent;
+    }
+    // &.character-sheet{
+    //     width: 897px;
+    //     height: 214px;
+    //     border: 1px solid $accent;
+        
+    // }*
+}
+.character-sheet{
+    width: 100%;
+    border: 1px solid $accent;
+    border-radius: 20px;
+    padding: 14px;
+}
+.nav__content {
+    display: block;
+    padding-top: 72px;
+    padding:  72px $side-padding 0 $side-padding;
+}
+
+.header__container {
+    display: flex;
+    padding-bottom: 30px;
+}
+.header {
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    color: $white;
+    border-style: solid none solid none;
+    border-width: 2px;
+    display:inline;
+    margin: auto;
+    border-color: $accent;
+    padding: 7px;
+}
+.sidenav-right {
+  position: fixed;
+  // border-right: 2px solid #E37AFF;
+  right: -25px;
+  bottom: 74px;
+  &__text {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: $accent;
+  }
+}
+.sidenav-right__line {
+  position: fixed;
+  border-right: 2px solid #E37AFF;
+  height: 100vh;
+  right: 45px;
+  z-index: 99;
+}
+.container__title, .slide__title, .slide__price {
+    margin: 0 0 0 0;
+}
+.slide__title {
+    font-family: $krona;
+    color: $accent;
+    font-size: 17px;
+    span {
+        color: $grey;
+        font-size: 13px;
+    }
+}
+.container__title {
+    font-family: $krona;
+    color: $white;
+    font-size: 24px;
+     span {
+        color: $accent;
+        font-size: 20px;
+    }
+}
+
+
+.socials {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+    color: $accent;
+    &__icons {
+        
+        &-list {
+            list-style: none;
+            margin: 0 0 0 0;
+            padding-left: 79px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            & li {
+                display: flex;  
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+        &-kofi {
+            width: 41px;
+            height: 41px;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { CommissionGuideComponent } from './pages/commission-guide/commission-guide.component';
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 import { SwiperModule } from 'swiper/angular';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SwiperModule } from 'swiper/angular';
     TopNavbarComponent,
     HomepageComponent,
     CommissionGuideComponent,
-    SideNavbarComponent
+    SideNavbarComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

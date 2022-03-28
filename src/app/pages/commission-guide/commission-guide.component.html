@@ -1,3 +1,284 @@
+<div class="sidenav-right__line"></div>
 <app-top-navbar></app-top-navbar>
-asdfghjkl
 <app-side-navbar></app-side-navbar>
+
+<div #topElm class="header__container">
+    <h1 class="header">Illustration Comission Guide </h1>
+</div>
+<div class="sidenav-right">
+    <div class="sidenav-right__text">Services</div>
+</div>
+
+<!-- Swiper slide -->
+<div class="swiper__container">
+    <div class="swiper__gradient-shadow"></div>
+    <swiper 
+        class="mySwiper"
+        [slidesPerView]="'auto'"
+        [loop]="true"
+        [spaceBetween]="30"
+    >
+        <ng-template swiperSlide>
+            <div class="slide__img-container">
+                <a (click)="scrollTo(portraitShowcase)">
+                    <img src="/assets/mynonjo_crimsoncuria_crimsontear.jpg">
+                </a>
+            </div>
+            <div class="slide__info-container">
+                <h2 class="slide__title">Portrait
+                    <br><span class="slide__price">$90</span>
+                </h2>
+            </div>
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="slide__img-container">
+                <a (click)="scrollTo(halfBodyShowcase)">
+                    <img src="/assets/mynonjo_crimsoncuria_Phoebe_Malk_final.jpg">
+                </a>
+            </div>
+            <div class="slide__info-container">
+                <h2 class="slide__title">Half-body
+                    <br><span class="slide__price">$140</span>
+                </h2>
+            
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide__img-container">
+                <a  (click)="scrollTo(fullBodyShowcase)">
+                    <img src="/assets/mynonjo_crimsoncuria_lacroix.jpg">
+                </a>
+            </div>
+            <div class="slide__info-container">
+                <h2 class="slide__title">Full-body
+                    <br><span class="slide__price">$180</span>
+                </h2>
+            
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide__img-container">
+                <a (click)="scrollTo(characterSheetShowcase)">
+                    <img src="/assets/mynonjo_crimsoncuria_Einar_charactersheet2_cut.jpg">
+                </a>
+            </div>
+            <div class="slide__info-container">
+                <h2 class="slide__title">Character sheet
+                    <br><span class="slide__price">$300</span>
+                </h2>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide__img-container">
+                <a (click)="scrollTo(backgroundShowcase)">
+                    <img src="/assets/mynonjo_crimsoncuria_haven.jpg">
+                </a>
+            </div>
+            <div class="slide__info-container">
+                <h2 class="slide__title">Background<br>
+                    <span class=".slide__price">$50+</span>
+                </h2>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
+<div class="standard-container two-side-container">
+    <div class="container-1">
+        <h2 class="heading">Terms and Agreements</h2>
+    </div>
+    <div class="container-2">
+        <ul>
+            <li>
+                After receiving 50% of my payment, I’ll start working on your
+                commission. I’ll receive the rest before sending you the final
+                product.
+            </li>
+            <li>
+                I only accept payment through Paypal.
+            </li>
+            <li>
+                A 5% Paypal transaction fee is added to the payment.
+            </li>
+            <li>
+                I’ll let you check the work 3 times: Sketch, line art, and base color
+            </li>
+            <li>This is for personal use only.</li>
+            <li>
+                For commercial use, I charge a 30% commercial fee.
+            </li>
+            <li>30% extra for NSFW.
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Portrait -->
+<div #portraitShowcase class="standard-container two-side-container">
+    <div class="container-1 text-container">
+        <h2 class="container__title">Portrait
+            <br><span>$90</span>
+        </h2>
+        <div class="container__desc horizontal">
+            Fully rendered portrait
+            of your character(s)
+            with extensive details.
+            <br>
+            <br>
+            <a (click)="scrollTo(notes)">More notes</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container__img-container">
+            <img src="assets/mynonjo_crimsoncuria_Elsie-Lamb_final.jpg">
+        </div>
+        <div class="container__img-container">
+            <img src="assets/mynonjo_crimsoncuria_bloodoath.jpg">
+        </div>
+    </div>
+</div>
+<!-- Half body -->
+<div #halfBodyShowcase class="standard-container two-side-container">
+    <div class="container-1 reverse">
+        <div class="container__img-container">
+            <img src="assets/mynonjo_crimsoncuria_katana.jpg">
+        </div>
+        <div class="container__img-container">
+            <img src="assets/mynonjo_crimsoncuria_sheriff.jpg">
+        </div>
+    </div>
+    <div class="container-2 text-container right">
+        <h2 class="container__title">Half-body
+            <br><span>$140</span>
+        </h2>
+        <div class="container__desc horizontal">
+            Fully rendered
+            half-body illustration
+            of your character(s)
+            with extensive details.
+            <br>
+            <br>
+            <a (click)="scrollTo(notes)">More notes</a>
+        </div>
+    </div>
+</div>
+<!-- Full body -->
+<div #fullBodyShowcase class="standard-container two-side-container">
+    <div class="container-1 text-container">
+        <h2 class="container__title">Full-body
+            <br><span>$180</span>
+        </h2>
+        <div class="container__desc horizontal">
+            Fully rendered
+            full-body
+            illustration
+            of your
+            character(s) with
+            extensive details.
+            <br>
+            <br>
+            <a (click)="scrollTo(notes)">More notes</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container__img-container portrait--long">
+            <img src="assets/mynonjo_crimsoncuria_carnage.jpg">
+        </div>
+        <div class="container__img-container">
+            <img class="lacroix" src="assets/mynonjo_crimsoncuria_lacroix.jpg">
+        </div>
+    </div>
+</div>
+<!-- Character sheet -->
+<div #characterSheetShowcase class="standard-container two-side-container column">
+    <div class="container-1">
+        <h2 class="container__title">Character sheet
+            <br><span>$300</span>
+        </h2>
+        <div class="container__desc right vertical">
+            Including: a full-body illustration, a portrait, a weapon/companion etc. of your choice and some basic
+            information.
+
+            <br>
+            <br>
+            <a (click)="scrollTo(notes)">More notes</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <img class="character-sheet" src="assets/mynonjo_crimsoncuria_charactersheets2.jpg">
+        <!-- <div class="container__img-container">
+                    
+                </div> -->
+    </div>
+</div>
+<!-- Background -->
+<div #backgroundShowcase class="standard-container two-side-container column">
+    <div class="container-1">
+        <h2 class="container__title">Background
+            <br><span>$300</span>
+        </h2>
+        <div class="container__desc right vertical">
+            Negotiable, depend on how complicated the illustration will be.
+            <br>
+            <br>
+            <a (click)="scrollTo(notes)">More notes</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <img class="character-sheet" src="assets/mynonjo_crimsoncuria_home_sheriff.jpg">
+    </div>
+</div>
+<!-- Notes -->
+<div class="standard-container two-side-container">
+    <div class="container-1">
+        <h2 #notes id="notes" class="container__title">Notes</h2>
+    </div>
+    <div class="container-2">
+        <ul>
+            <li>
+                Simple colored background is free.
+            </li>
+            <li>
+                Extra charge for additional requests (complicated details, NSFW, etc.)
+            </li>
+            <li>
+                I charge 70% for an additional character
+            </li>
+            <li>
+                This is a general commission guide. If you have a special request,
+                we can negotiate.
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="socials">
+    Get in touch:
+    <div class="socials__icons">
+        <ul class="socials__icons-list">
+            <li>
+                <a href="https://www.instagram.com/mynonjo/">
+                    <img src="assets/Instagram.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://crimsoncuria.tumblr.com">
+                    <img src="assets/Tumblr.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/mynonjo">
+                    <img src="assets/Twitter.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://ko-fi.com/mynonjo">
+                    <img class="socials__icons-kofi" src="assets/ko-fi.svg" alt="Ko-fi"></a>
+            </li>
+            <li>
+                <a href="mailto:ngongocmy314@gmail.com">
+                    <img src="assets/email.svg">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<a (click)="scrollTo(topElm)"><img class="to-top noselect on-pages" src="/assets/top.svg" alt="Back to top"></a>
