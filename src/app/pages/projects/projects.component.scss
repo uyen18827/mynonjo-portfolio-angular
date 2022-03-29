@@ -1,0 +1,113 @@
+@import "src/variables.scss";
+
+.container--padding-left {
+    padding-left: $side-padding;
+}
+.navigation {
+    padding-top: 62px;
+}
+.navigation__header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation__header {
+    font-size: 14px;
+    padding-left: 41.58px;
+}
+ol.navigation__menu {
+    list-style: none;
+    counter-reset: nav-counter;
+    padding-inline-start: 0px;
+    margin-right: 0px;
+    &.horizontal > li {
+        display: inline-block;
+        padding-right: 66px;
+    }
+    & a {
+        color: $white
+    }
+    & li {
+        line-height: 2.1rem;
+        counter-increment: nav-counter;
+        padding-bottom: 11px;
+        
+        
+
+        &:not(:last-child) {
+            padding-bottom: 0px;
+        }
+        &::before {
+            content: counter(nav-counter);
+            color: #E37AFF;
+            font-weight: bold;
+            padding-right: 32px;
+        }
+    }
+}
+
+.horizontal-list {
+    grid-column: 1 / span 2;
+    align-self:flex-end;
+    z-index: 2;
+    margin-left: $side-padding;
+}
+
+ul.navigation__menu > li {
+    font-family: $krona;
+    font-size: 11px;
+    list-style: none;
+    font-weight: 400;
+    line-height: 2.1rem;
+    &:before{
+        // padding-right: 30px;
+        content: "— ";
+        color: $accent;
+    }
+}
+
+
+//////////////////////
+.full-container {
+    height: calc(100vh - 134px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+h1.title--big {
+    padding-left: $side-padding;
+    margin: 0 0 0 0;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120px;
+    text-transform: capitalize;
+    color: $accent;
+    & span {
+        color: $white;
+    }
+    z-index: 2;
+    grid-column: 1;
+    grid-row: 1;
+}
+.background-img__container {
+    z-index: 1;
+    position: absolute;
+    bottom:0;
+    grid-column: 3;
+    grid-row: 1;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.background-img {
+    height: 100vh;
+}
+////
+// .horizontal-line {
+//     border: 2px solid #E37AFF;
+//     width: 100%;
+
+// }

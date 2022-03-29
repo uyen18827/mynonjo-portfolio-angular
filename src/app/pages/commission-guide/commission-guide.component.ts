@@ -13,15 +13,7 @@ export class CommissionGuideComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  //  swiper = new Swiper(".mySwiper", {
-  //   slidesPerView: "auto",
-  //   spaceBetween: 30,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  //   loop: true,
-  // });
+  
   scrollTo(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
   }

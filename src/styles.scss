@@ -167,6 +167,10 @@ div.container {
     font-smooth: auto;
   } 
 }
+
+.standard-container {
+  padding:  0 $side-padding 0 $side-padding;
+}
 ////////////////////////ICONS////////////////////////////////
 .kofi-icon {
   width: 41px;
@@ -300,4 +304,9 @@ div.container {
     right: 83px;
     bottom: 37px;
   }
+}
+hr {
+  margin-top: 41px;
+  margin-bottom: 23px;
+  border: 2px solid #E37AFF;
 }
