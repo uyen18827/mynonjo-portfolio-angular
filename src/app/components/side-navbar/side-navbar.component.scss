@@ -39,24 +39,24 @@
     padding-top: 46px;
     height: auto;
 
-    .slide-menu__button {
-        cursor: pointer;
-        width: 24px;
-        height: 75px;
+  .slide-menu__button {
+    cursor: pointer;
+    width: 24px;
+    height: 75px;
 
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 
-        background: #E37AFF;
-        border: 1px solid #E37AFF;
-        box-sizing: border-box;
-        border-radius: 0px 10px 10px 0px;
-        
-        & img {
-        height: 18px;
-        }
+    background: #E37AFF;
+    border: 1px solid #E37AFF;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px;
+      
+      & img {
+      height: 18px;
+      }
     }
   }
 

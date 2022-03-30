@@ -19,3 +19,9 @@ $regular: 20px;
   user-select: none; /* Non-prefixed version, currently
                       supported by Chrome, Edge, Opera and Firefox */
 }
+
+@mixin bordered-container {
+  border: 2px solid $accent;
+  box-sizing: border-box;
+  border-radius: 20px;
+}

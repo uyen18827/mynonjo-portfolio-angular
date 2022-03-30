@@ -71,9 +71,7 @@
     }
 }
 .container__img-container {
-    border: 1px solid $accent;
-    box-sizing: border-box;
-    border-radius: 20px;
+    @include bordered-container;
     width: 317px;
     height: 458px;
     display:flex;

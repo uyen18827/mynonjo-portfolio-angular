@@ -105,6 +105,24 @@ h1.title--big {
 .background-img {
     height: 100vh;
 }
+$itemMargin: 15px;
+.project__container {
+    @include bordered-container;
+
+    & img {
+        border-radius: 20px;
+        width: calc( 100% - 30px );
+        margin: $itemMargin;
+    }
+    & h2 {
+        margin-left: $itemMargin;
+        font-size: 17.4px;
+        color: $accent;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}
 ////
 // .horizontal-line {
 //     border: 2px solid #E37AFF;
