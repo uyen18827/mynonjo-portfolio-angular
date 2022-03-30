@@ -84,7 +84,7 @@
     object-fit: cover;
     transition: transform .5s ease;
     &:hover {
-        transform:scale(110%);
+      transform:scale(110%);
     }
   }
 }
@@ -169,6 +169,8 @@ div.container {
 
 .standard-container {
   padding:  0 $side-padding 0 $side-padding;
+  max-width: 1200px;
+  margin: auto;
 }
 ////////////////////////ICONS////////////////////////////////
 .kofi-icon {

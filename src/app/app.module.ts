@@ -9,6 +9,8 @@ import { CommissionGuideComponent } from './pages/commission-guide/commission-gu
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 import { SwiperModule } from 'swiper/angular';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { SocialFooterComponent } from './components/social-footer/social-footer.component';
+import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     HomepageComponent,
     CommissionGuideComponent,
     SideNavbarComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SocialFooterComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

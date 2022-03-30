@@ -1,4 +1,7 @@
 @import "src/variables.scss";
+.container {
+  z-index: 10;
+}
 ///////////////////////// 🩸BRAND🩸 ///////////////////////////////
 h1.brand {
   font-family: $syco;
