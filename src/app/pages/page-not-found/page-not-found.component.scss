@@ -1,0 +1,14 @@
+@import "src/variables.scss";
+.standard-container {
+    text-align: center;
+}
+h1 {
+    font-size: 110px;
+    font-family: $spaceMono;
+    color: $accent;
+    margin-bottom: 0;
+}
+h2 {
+    color: $accent;
+    font-size: 36px;
+}

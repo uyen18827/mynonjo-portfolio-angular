@@ -4,12 +4,12 @@
     <!-- content -->
     <div class="content__container">
 
-        <div class="review center">
+        <div  class="review center" [ngClass]="{ 'open': openMenu }">
             Blaspheme, but I like it.<br>
             — Your grandma.
         </div>
     </div>
-    <a href="#"><img class="to-top noselect" src="/assets/top.svg" alt="Back to top"></a>
+    <a href="#"><img class="to-top noselect" src="assets/top.svg" alt="Back to top"></a>
 
     <!-- <div class="push"></div> -->
 </div>
@@ -30,7 +30,7 @@
                 <a routerLink="/commission-guide" routerLinkActive="active">
                     <li><span>Services</span></li>
                 </a>
-                <a href="#">
+                <a routerLink="/construction">
                     <li><span>About</span></li>
                 </a>
             </ol>
@@ -39,8 +39,8 @@
     <!-- ./ Menu container -->
 
     <!-- IMAGE -->
-    <div class="img__container">
-        <img class="main-img noselect" src="/assets/figure.webp">
+    <div class="img__container" [ngClass]="{ 'open': openMenu }">
+        <img class="main-img noselect" src="assets/figure.webp">
     </div>
     <!-- ./ IMAGE -->
 

@@ -1,8 +1,13 @@
+<div class="sidenav-right__line"></div>
 <app-top-navbar></app-top-navbar>
 <app-side-navbar></app-side-navbar>
-
+<div class="sidenav-right">
+    <div class="sidenav-right__text">Projects</div>
+</div>
 <div class="full-container">
-    <h1 class="title--big">Let's<br> take<br> a <span>look</span></h1>
+    <h1 class="title--big">Proceed<br> with<br><span>caution,</span>
+    <br> love!
+    </h1>
     <div class="background-img__container">
         <img class="background-img" src="assets/trang22.webp">
         
@@ -12,14 +17,14 @@
         <div class="navigation">
     
             <ol class="navigation__menu horizontal">
-                <li>
+                <li (click)="scrollTo(design)">
                     Design
                 </li>
     
-                <li>
+                <li (click)="scrollTo(illustration)">
                     Illustration
                 </li>
-                <li>
+                <li (click)="scrollTo(game)">
                     Game
                 </li>
             </ol>
@@ -29,7 +34,7 @@
 <div class="standard-container">
     <hr>
     <ol class="navigation__menu">
-        <li>
+        <li #design>
             Design
         </li>
         <!-- Design showcase -->
@@ -62,7 +67,7 @@
             </h2>
         </div>
         <hr>
-        <li>
+        <li #illustration>
             Illustration
         </li>
         <div class="project__container--two">
@@ -87,7 +92,7 @@
             </div>
         </div>
         <hr>
-        <li>
+        <li #game>
             Game
         </li>
         <div class="project__container--two">

@@ -26,12 +26,20 @@ ol.navigation__menu {
     & a {
         color: $white
     }
+    &.horizontal:hover > li {
+      color: $grey;
+    }
+    &.horizontal:hover > li:hover {
+      color: $white;
+    }
     & li {
         line-height: 2.1rem;
         counter-increment: nav-counter;
         padding-bottom: 11px;
         
-        
+        cursor: pointer;
+
+        scroll-margin-top: 25px;
 
         &:not(:last-child) {
             padding-bottom: 0px;
@@ -77,10 +85,10 @@ h1.title--big {
     padding-left: $side-padding;
     margin: 0 0 0 0;
     padding-top: 16px;
-    font-weight: 400;
     font-size: 96px;
+    font-family: $spaceMono;
+
     line-height: 120px;
-    text-transform: capitalize;
     color: $accent;
     & span {
         color: $white;
@@ -116,9 +124,9 @@ $itemMargin: 15px;
         flex-wrap: wrap;
         justify-content: space-between;
         height: fit-content;
-        & .project__container {
-            // max-height: 500px;
-        }
+        // & .project__container {
+        //     // max-height: 500px;
+        // }
     }
     .project__img-container
     {
@@ -154,6 +162,26 @@ $itemMargin: 15px;
         margin-bottom: 30px;
     }
 
+}
+.sidenav-right__line {
+  position: fixed;
+  border-right: 2px solid #E37AFF;
+  height: 100vh;
+  right: 45px;
+  z-index: 11;
+}
+.sidenav-right {
+  position: fixed;
+  // border-right: 2px solid #E37AFF;
+  right: -25px;
+  bottom: 74px;
+    z-index: 11;
+  &__text {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: $accent;
+  }
 }
 ////
 // .horizontal-line {

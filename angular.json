@@ -103,6 +103,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "base-href": "\/mynonjo-portfolio-angular\/",
+            "name": "Angular Schule Team",
+            "email": "team@angular.schule"
+          }
         }
       }
     }

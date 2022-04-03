@@ -11,5 +11,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  scrollTo(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 }

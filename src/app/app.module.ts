@@ -11,6 +11,8 @@ import { SwiperModule } from 'swiper/angular';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SocialFooterComponent } from './components/social-footer/social-footer.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     SideNavbarComponent,
     ProjectsComponent,
     SocialFooterComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    PageNotFoundComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,

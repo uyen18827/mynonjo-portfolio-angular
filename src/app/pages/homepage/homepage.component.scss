@@ -13,6 +13,10 @@
   grid-column: 2;
   grid-row: 1;
   align-items: flex-end;
+    transition: transform .5s ease;
+  &.open {
+    transform: translateX(40%);
+  }
 }
 img.main-img {
   height: calc(94vh);
@@ -83,6 +87,10 @@ a {
   color: $white;
   font-family: $krona;
   font-size: 24px;
+  transition: transform .5s ease;
+  &.open {
+    transform: translate(10%,-30%);
+  }
 }
 
 .center {
@@ -95,10 +103,10 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-    .wrapper {
-        margin-top: -91px;
-    }
-    .footer__links {
-        display: none;
-    }
+  .wrapper {
+      margin-top: -91px;
+  }
+  .footer__links {
+      display: none;
+  }
 }
