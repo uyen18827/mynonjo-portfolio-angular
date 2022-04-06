@@ -1,5 +1,9 @@
 # MynonjoPortfolio
 
+Portfolio website for [**mynonjo/crimsoncuria**](https://www.instagram.com/mynonjo/). 
+
+Design provided by mynonjo, coded by uyen18827.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
