@@ -1,8 +1,15 @@
 <div class="container">
     <nav class="nav__content">
-        <a routerLink="/" routerLinkActive="active">
-            <h1 class="brand">mynonjo</h1>
-        </a>
+        <div class="nav__right-container">
+            <a routerLink="/" routerLinkActive="active">
+                <h1 class="brand">mynonjo</h1>
+            </a>
+            <div class="desc">
+                Illustrator. <br>
+                Graphic Designer.
+            </div>
+        </div>
+        <app-contacts-dropdown></app-contacts-dropdown>
         <div class="hamburger mobile-only" 
         (click)="toggleMenu()" 
         [ngClass]="{ 'open': !toggleClass }">
@@ -11,10 +18,7 @@
             <div class="bar3"></div>
         </div>
 
-        <div class="desc">
-            Illustrator. <br>
-            Graphic Designer.
-        </div>
+
     </nav>
 </div>
 <!-- SLIDE OUT MENU MOBILE ONLY -->

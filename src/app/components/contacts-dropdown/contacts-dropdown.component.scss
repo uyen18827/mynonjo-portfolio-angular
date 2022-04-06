@@ -1,0 +1,83 @@
+@import "src/variables.scss";
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &__triangle {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    .dropdown__triangle {
+      transform: rotate(0deg);
+    }
+    & .dropbtn { 
+      border-radius: 15px 15px 0px 0px;
+      border-bottom: transparent;
+    }
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  font-family: $krona;
+  // padding: 16px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 20px;
+  display: block;
+  min-width: 160px;
+  text-align: center;
+  border: 2px solid $accent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.image-container {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  border-left: 2px solid $accent;
+  border-bottom: 2px solid $accent;
+  border-right: 2px solid $accent;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $white;
+  font-size: 14px;
+  padding-top: 12px;
+  text-decoration: none;
+  // display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content {
+  & ol.social__links {
+    padding-left: 11px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    & li, a {
+      font-size: 10px!important;
+    }
+    & li:last-child {
+      padding-bottom: 0;
+    }
+  }
+  @include list-style;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

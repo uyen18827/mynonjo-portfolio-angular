@@ -15,7 +15,8 @@ h1.brand {
   }
 }
 .nav__content {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   padding-top: 72px;
   padding:  72px $side-padding 0 $side-padding;
 }

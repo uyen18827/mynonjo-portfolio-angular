@@ -13,6 +13,7 @@ import { SocialFooterComponent } from './components/social-footer/social-footer.
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
+import { ContactsDropdownComponent } from './components/contacts-dropdown/contacts-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UnderConstructionComponent } from './pages/under-construction/under-con
     SocialFooterComponent,
     BackToTopComponent,
     PageNotFoundComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    ContactsDropdownComponent
   ],
   imports: [
     BrowserModule,

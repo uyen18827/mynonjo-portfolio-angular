@@ -26,3 +26,49 @@ $spaceMono: 'Space Mono', monospace;
   box-sizing: border-box;
   border-radius: 20px;
 }
+
+@mixin highlight-fade-hover {
+  &:hover > a {
+    color: $grey;
+  }
+  &:hover > a:hover {
+    color: $white;
+  }
+}
+
+@mixin list-style {
+  ol {
+    list-style: none;
+    counter-reset: nav-counter;
+    padding-inline-start: 0px;
+    margin-right: 0px;
+    &:hover > a {
+      color: $grey!important;
+    }
+
+    & a:hover {
+      color: $white!important;
+    }
+
+    // @include highlight-fade-hover;
+    & li {
+      line-height: 2.1rem;
+      counter-increment: nav-counter;
+      padding-bottom: 11px;
+      
+      cursor: pointer;
+
+      scroll-margin-top: 25px;
+
+      &:not(:last-child) {
+        padding-bottom: 0px;
+      }
+      &::before {
+        content: counter(nav-counter);
+        color: #E37AFF;
+        font-weight: bold;
+        padding-right: 19px;
+      }
+    }
+  } 
+}
