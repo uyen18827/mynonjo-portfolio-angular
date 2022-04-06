@@ -1,5 +1,4 @@
 @import "src/variables.scss";
-// @import 'swiper/scss';
 .right {
     text-align: right;
 }
@@ -7,7 +6,6 @@
     padding-top: 110px;
     display: flex;
     flex-direction: row;
-    // EXPERIMENTAL
     max-width: 1000px;
     margin: auto;
     &.column {
@@ -36,10 +34,6 @@
             color: $accent;
         }
     }
-    
-    // & .container-1 {
-        
-    // }
 }
 .container-2, .container-1 {
     display: flex;
@@ -95,14 +89,7 @@
         width: 484px;
         height: 458px;
         object-fit: cover;
-        // border: 1px solid $accent;
     }
-    // &.character-sheet{
-    //     width: 897px;
-    //     height: 214px;
-    //     border: 1px solid $accent;
-        
-    // }*
 }
 .character-sheet{
     width: 100%;
