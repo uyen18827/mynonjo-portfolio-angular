@@ -135,25 +135,7 @@
         color: $accent;
     }
 }
-.sidenav-right {
-  position: fixed;
-  // border-right: 2px solid #E37AFF;
-  right: -25px;
-  bottom: 74px;
-  &__text {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    color: $accent;
-  }
-}
-.sidenav-right__line {
-  position: fixed;
-  border-right: 2px solid #E37AFF;
-  height: 100vh;
-  right: 45px;
-  z-index: 99;
-}
+
 .container__title, .slide__title, .slide__price {
     margin: 0 0 0 0;
 }

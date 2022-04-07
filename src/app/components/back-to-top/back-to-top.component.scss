@@ -1,0 +1,22 @@
+@import "src/variables.scss";
+
+.to-top {
+  height: 68px;
+  position: fixed;
+  right: $side-padding;
+  bottom: 48px;
+  z-index: 99;
+  filter: drop-shadow(0 0 0.75rem #dc143c);
+  &.on-pages {
+    right: 83px;
+    bottom: 37px;
+  }
+}
+@media screen and (max-width:750px) {
+    .to-top {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        height: 51.92px;
+    }
+}

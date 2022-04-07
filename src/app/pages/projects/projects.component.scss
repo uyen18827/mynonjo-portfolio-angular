@@ -151,6 +151,7 @@ $itemMargin: 15px;
         color: $accent;
         margin-top: 0;
         margin-bottom: 21px;
+        margin-right: $itemMargin;
         & span {
             font-size: 13.05px;
             display: block;
@@ -168,14 +169,14 @@ $itemMargin: 15px;
   border-right: 2px solid #E37AFF;
   height: 100vh;
   right: 45px;
-  z-index: 11;
+  z-index: 7;
 }
 .sidenav-right {
   position: fixed;
   // border-right: 2px solid #E37AFF;
   right: -25px;
   bottom: 74px;
-    z-index: 11;
+    z-index: 7;
   &__text {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);

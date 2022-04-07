@@ -268,6 +268,11 @@ div.container {
     padding-right: 32px;
   }
 }
+hr {
+  margin-top: 41px;
+  margin-bottom: 23px;
+  border: 2px solid #E37AFF;
+}
 //////////////////// 📱RESPONSIVE📱 ////////////////////////////
 .mobile-only {
   display: none;
@@ -278,10 +283,6 @@ div.container {
   }
   .brand__container {
     position: inherit
-  }
-
-  .review {
-    font-size: 18px;
   }
   .wrapper, .footer {
     padding-left: 0;
@@ -302,28 +303,7 @@ div.container {
     top: 66px;
     margin: 0;
   }
-  .to-top {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    height: 60px;
+  .standard-container {
+    padding:  0 33px 0 33px;
   }
-}
-/////back to top button////
-.to-top {
-  height: 68px;
-  position: fixed;
-  right: $side-padding;
-  bottom: 48px;
-  z-index: 99;
-  filter: drop-shadow(0 0 0.75rem #dc143c);
-  &.on-pages {
-    right: 83px;
-    bottom: 37px;
-  }
-}
-hr {
-  margin-top: 41px;
-  margin-bottom: 23px;
-  border: 2px solid #E37AFF;
 }

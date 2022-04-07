@@ -24,6 +24,7 @@ h1.brand {
   .nav__content {
     padding-left: 35px;
     z-index: 10;
+    padding-top: 63px;
   }
 }
 /////////////////////// 🍔HAMBURGER & MENU🍔 /////////////////////////
@@ -85,7 +86,7 @@ h1.brand {
     
     ///////////// CONTACT ///////////////
     & .contact-table {
-      padding-top:164px;
+      padding-top: 10%;
       width: 100%;
       font-size: 14px;
       text-align: center;
@@ -110,6 +111,14 @@ h1.brand {
         border-right: 0px
       }
     }
+  }
+}
+@media screen and (max-width: 750px) {
+  .hamburger {
+    position: absolute;
+    right: 34px;
+    top: 54px;
+    margin: 0;
   }
 }
 ////////////////////////////////////////////////////////////////////////

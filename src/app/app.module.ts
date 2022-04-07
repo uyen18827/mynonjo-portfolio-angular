@@ -14,6 +14,7 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 import { ContactsDropdownComponent } from './components/contacts-dropdown/contacts-dropdown.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ContactsDropdownComponent } from './components/contacts-dropdown/contac
     BackToTopComponent,
     PageNotFoundComponent,
     UnderConstructionComponent,
-    ContactsDropdownComponent
+    ContactsDropdownComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,
