@@ -184,6 +184,29 @@ $itemMargin: 15px;
     color: $accent;
   }
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .container--padding-left { 
+        padding-left: $mobile-padding;
+    }
+    .horizontal-list {
+        margin-left: $mobile-padding;
+    }
+    h1.title--big {
+        font-size: 40px;
+        padding: 0 0 0 0;
+        line-height: initial;
+        position: absolute;
+        right: 30px;
+        text-align: end;
+    }
+    .full-container {
+        height: calc(100vh - 83px);
+    }
+    .background-img {
+        height: 88vh;
+    }
+}
 ////
 // .horizontal-line {
 //     border: 2px solid #E37AFF;

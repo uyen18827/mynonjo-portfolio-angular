@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $tablet-breakpoint) {
     .sidenav-right__line, .sidenav-right {
         display: none;
     }

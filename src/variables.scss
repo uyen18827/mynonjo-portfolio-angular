@@ -1,15 +1,22 @@
 /////////////// ✨VARIABLES✨ ///////////////////
 $side-padding: 189px;
+$mobile-padding: 33px;
+
 $accent: #E37AFF;
 $grey:  #C1C1C1;
 $white: #FFFFFF;
 $background: #101428;
+
 $krona: 'Krona One', sans-serif;
 $syco: 'Syncopate', sans-serif;
+$spaceMono: 'Space Mono', monospace;
+
 $small: 12px;
 $verySmall: 9px;
 $regular: 20px;
-$spaceMono: 'Space Mono', monospace;
+
+$tablet-breakpoint: 768px;
+
 ////////////////////// MIXINS ///////////////////////////
 @mixin noselect {
   -webkit-touch-callout: none; /* iOS Safari */

@@ -99,7 +99,7 @@ a {
   flex-direction: row;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .wrapper {
     margin-top: -82px;
     padding-left: 0;

@@ -1,3 +1,4 @@
+@import "src/variables.scss";
 //////////////////////🎿DESKTOP SLIDE MENU🎿//////////////////////////////
 .slide-menu {
   z-index: 11;
@@ -69,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .slide-menu {
     display: none;
   }
