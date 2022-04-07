@@ -87,10 +87,7 @@ a {
   color: $white;
   font-family: $krona;
   font-size: 24px;
-  transition: transform .5s ease;
-  &.open {
-    transform: translate(10%,-30%);
-  }
+  white-space:nowrap;
 }
 
 .center {
