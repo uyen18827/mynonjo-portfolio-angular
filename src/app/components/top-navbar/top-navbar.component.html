@@ -18,53 +18,58 @@
             <div class="bar3"></div>
         </div>
     </nav>
+    <app-mobile-page-title header="{{ pageHeader }}"></app-mobile-page-title>
 </div>
 <!-- SLIDE OUT MENU MOBILE ONLY -->
 <div class="hamburger__slide-menu mobile-only" [ngClass]="{ 'open': !toggleClass }">
-    <div class="menu__container">
-        <ol>
-            <a routerLink="/" routerLinkActive="active">
-                <li><span>Home</span></li>
-            </a>
-            <a routerLink="/projects">
-                <li><span>Projects</span></li>
-            </a>
-            <a routerLink="/commission-guide" routerLinkActive="active">
-                <li><span>Services</span></li>
-            </a>
-            <a routerLink="/construction">
-                <li><span>About</span></li>
-            </a>
-        </ol>
-    </div>
-    <div class="contact-table">
-        <table class="no-left no-right">
-            <tr>
-                <td class="no-left">
-                    <a href="https://www.instagram.com/mynonjo/">
-                        <img src="assets/Instagram.svg" alt="Instagram">
-                    </a>
-                </td>
-                <td class='no-right'>
-                    <a href="https://crimsoncuria.tumblr.com">
-                        <img src="assets/Tumblr.svg" alt="Tumblr">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="no-left">
-                    <a href="https://twitter.com/mynonjo">
-                        <img src="assets/Twitter.svg" alt="Twitter">
-                    </a>
-                </td>
-                <td class='no-right'>
-                    <a href="https://ko-fi.com/mynonjo">
-                    <img class="kofi-icon" src="assets/ko-fi.svg" alt="Ko-fi"></a>
-                </td>
-            </tr>
-            <tr>
-                <td class="no-left no-right" colspan="2"><a href="mailto:ngongocmy314@gmail.com">ngongocmy314@gmail.com</a></td>
-            </tr>
-        </table>
+
+    <app-mobile-page-title header="Illustrator. Graphic Designer."></app-mobile-page-title>
+    <div class="slide-menu__content">
+        <div class="menu__container">
+            <ol>
+                <a routerLink="/" routerLinkActive="active">
+                    <li><span>Home</span></li>
+                </a>
+                <a routerLink="/projects">
+                    <li><span>Projects</span></li>
+                </a>
+                <a routerLink="/commission-guide" routerLinkActive="active">
+                    <li><span>Services</span></li>
+                </a>
+                <a routerLink="/construction">
+                    <li><span>About</span></li>
+                </a>
+            </ol>
+        </div>
+        <div class="contact-table">
+            <table class="no-left no-right">
+                <tr>
+                    <td class="no-left">
+                        <a href="https://www.instagram.com/mynonjo/">
+                            <img src="assets/Instagram.svg" alt="Instagram">
+                        </a>
+                    </td>
+                    <td class='no-right'>
+                        <a href="https://crimsoncuria.tumblr.com">
+                            <img src="assets/Tumblr.svg" alt="Tumblr">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="no-left">
+                        <a href="https://twitter.com/mynonjo">
+                            <img src="assets/Twitter.svg" alt="Twitter">
+                        </a>
+                    </td>
+                    <td class='no-right'>
+                        <a href="https://ko-fi.com/mynonjo">
+                        <img class="kofi-icon" src="assets/ko-fi.svg" alt="Ko-fi"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="no-left no-right" colspan="2"><a href="mailto:ngongocmy314@gmail.com">ngongocmy314@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>

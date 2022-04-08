@@ -33,3 +33,9 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .socials__icons-list {
+        padding-left: 27px;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-navbar',
@@ -15,5 +15,6 @@ export class TopNavbarComponent implements OnInit {
   toggleMenu() {
     this.toggleClass = !this.toggleClass;
   }
+  @Input() pageHeader = "";
 
 }

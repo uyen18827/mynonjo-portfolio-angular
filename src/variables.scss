@@ -79,3 +79,14 @@ $tablet-breakpoint: 768px;
     }
   } 
 }
+
+@mixin mobile-only {
+  .mobile-only {
+    display: none;
+  }
+  @media screen and (max-width:$tablet-breakpoint) {
+    .mobile-only {
+      display: block;
+    }
+  }
+}

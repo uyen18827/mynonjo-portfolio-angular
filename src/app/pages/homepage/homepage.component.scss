@@ -101,11 +101,14 @@ a {
 
 @media screen and (max-width: $tablet-breakpoint) {
   .wrapper {
-    margin-top: -82px;
+    margin-top: -171px;
     padding-left: 0;
     padding-right: 0;
 
     width: 100vw;
+  }
+  img.main-img {
+    height: 80vh;
   }
   .footer__links {
     display: none;
@@ -122,6 +125,8 @@ a {
   .review {
     white-space: normal;
     font-size: 21px;
+    width: 80%;
+    top: 65%;
   }
   .to-top {
     position: fixed;

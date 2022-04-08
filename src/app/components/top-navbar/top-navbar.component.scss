@@ -1,7 +1,7 @@
 @import "src/variables.scss";
-.container {
-  z-index: 10;
-}
+// .container {
+//   z-index: 10;
+// }
 ///////////////////////// 🩸BRAND🩸 ///////////////////////////////
 h1.brand {
   font-family: $syco;
@@ -19,12 +19,15 @@ h1.brand {
   justify-content: space-between;
   padding-top: 72px;
   padding:  72px $side-padding 0 $side-padding;
+  z-index: 10;
 }
 @media screen and (max-width: $tablet-breakpoint) {
   .nav__content {
     padding-left: 35px;
-    z-index: 10;
+    padding-right: 35px;
+    z-index: 12;
     padding-top: 63px;
+    padding-bottom: 35px;
   }
 }
 /////////////////////// 🍔HAMBURGER & MENU🍔 /////////////////////////
@@ -35,17 +38,23 @@ h1.brand {
     left: 0;
     width: 100vw;
     height: 100%;
-    z-index: 9;
+    z-index: 11;
     
     transform: translateX(-100vw);
     transition: transform .5s ease;
     background-color:$background;
+    padding-top: 117px;
 
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    .slide-menu__content {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      height: 100%;
+      justify-content: flex-start;
+      padding-top: 25%;
+      overflow: hidden;
+    }
 
     &.open {
       transform: translateX(0);
@@ -112,6 +121,9 @@ h1.brand {
       }
     }
   }
+}
+app-mobile-page-title {
+  z-index: 1;
 }
 @media screen and (max-width: $tablet-breakpoint) {
   .hamburger {

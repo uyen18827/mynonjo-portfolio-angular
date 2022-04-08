@@ -15,6 +15,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 import { ContactsDropdownComponent } from './components/contacts-dropdown/contacts-dropdown.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
+import { MobilePageTitleComponent } from './components/mobile-page-title/mobile-page-title.component';
+import { ContactTableComponent } from './components/contact-table/contact-table.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { PageTitleComponent } from './components/page-title/page-title.component
     PageNotFoundComponent,
     UnderConstructionComponent,
     ContactsDropdownComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    MobilePageTitleComponent,
+    ContactTableComponent
   ],
   imports: [
     BrowserModule,

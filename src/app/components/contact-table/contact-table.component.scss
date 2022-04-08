@@ -1,0 +1,28 @@
+@import "src/variables.scss";
+.contact-table {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+
+    table, td, th {
+        border: 2px solid $accent;
+        height: 50px;
+        width: 50%;
+    }
+    a {
+        color: $white;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .no-left {
+     border-left: 0px;
+    }
+    .no-right {
+        border-right: 0px
+    }
+}
